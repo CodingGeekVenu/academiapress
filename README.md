@@ -2,8 +2,6 @@
 
 > A modern, AI-powered academic publishing platform with glassmorphism design, dark mode support, and comprehensive analytics.
 
-> **Note**: Consider adding a relevant project image here to enhance the README's visual appeal on GitHub.
-
 ## ✨ Features
 
 ### 🎨 **Modern UI/UX**
