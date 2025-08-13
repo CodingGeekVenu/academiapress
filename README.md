@@ -1,52 +1,37 @@
-code
-Markdown
-download
-content_copy
-expand_less
-
 # 🎓 AcademiaPress - Advanced Academic Publishing Platform
 
-[![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/YOUR_USERNAME/academiapress/blob/main/LICENSE)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
-[![Node.js](https://img.shields.io/badge/Node.js-v18.0.0+-green.svg)](https://nodejs.org/)
-[![Supabase](https://img.shields.io/badge/Powered%20by-Supabase-3ECF8E.svg)](https://supabase.com/)
+> A modern, AI-powered academic publishing platform with glassmorphism design, dark mode support, and comprehensive analytics.
 
-> A modern, AI-powered academic publishing platform with a glassmorphism design, dark mode support, and comprehensive analytics.
-
-![AcademiaPress Platform](https://via.placeholder.com/1200x400/002147/FFFFFF?text=AcademiaPress+-+Advanced+Academic+Publishing+Platform)
-
----
+> **Note**: Consider adding a relevant project image here to enhance the README's visual appeal on GitHub.
 
 ## ✨ Features
 
 ### 🎨 **Modern UI/UX**
-- **Glassmorphism Design**: Beautiful glass-effect cards and components with backdrop blur.
-- **Complete Dark Mode**: Seamless light/dark theme switching with system preference detection.
-- **Responsive Design**: Mobile-first approach working perfectly on all devices.
-- **Smooth Animations**: Framer Motion powered transitions and micro-interactions.
-- **Professional Typography**: Inter font family with proper weight variations.
+- **Glassmorphism Design**: Beautiful glass-effect cards and components with backdrop blur
+- **Complete Dark Mode**: Seamless light/dark theme switching with system preference detection
+- **Responsive Design**: Mobile-first approach working perfectly on all devices
+- **Smooth Animations**: Framer Motion powered transitions and micro-interactions
+- **Professional Typography**: Inter font family with proper weight variations
 
 ### 📊 **Analytics & Insights**
-- **Submission Analytics**: Real-time insights into paper submissions with interactive charts.
-- **Advanced Analytics Dashboard**: Revenue tracking, author performance, and platform metrics.
-- **Author Performance Tracking**: Success rates, publication counts, and institutional data.
-- **Revenue Analytics**: Financial insights with monthly trends and growth indicators.
-- **Interactive Charts**: Recharts integration with responsive design and dark mode support.
+- **Submission Analytics**: Real-time insights into paper submissions with interactive charts
+- **Advanced Analytics Dashboard**: Revenue tracking, author performance, and platform metrics
+- **Author Performance Tracking**: Success rates, publication counts, and institutional data
+- **Revenue Analytics**: Financial insights with monthly trends and growth indicators
+- **Interactive Charts**: Recharts integration with responsive design and dark mode support
 
 ### 🔍 **AI-Powered Tools**
-- **Plagiarism Checker**: Advanced AI-powered plagiarism detection with similarity scoring.
-- **Source Identification**: Comprehensive database scanning across academic sources.
-- **Smart Recommendations**: AI-driven research suggestions and trend analysis.
-- **Automated Processing**: Streamlined submission workflows with status tracking.
+- **Plagiarism Checker**: Advanced AI-powered plagiarism detection with similarity scoring
+- **Source Identification**: Comprehensive database scanning across academic sources
+- **Smart Recommendations**: AI-driven research suggestions and trend analysis
+- **Automated Processing**: Streamlined submission workflows with status tracking
 
 ### 📚 **Core Functionality**
-- **Paper Submission System**: Complete research paper submission with file upload support.
-- **Conference Management**: Registration, scheduling, and networking features.
-- **User Authentication**: Secure Supabase-powered authentication with profile management.
-- **Real-time Updates**: Live data synchronization and status updates.
-- **Institution Management**: University and research institution integration.
-
----
+- **Paper Submission System**: Complete research paper submission with file upload support
+- **Conference Management**: Registration, scheduling, and networking features
+- **User Authentication**: Secure Supabase-powered authentication with profile management
+- **Real-time Updates**: Live data synchronization and status updates
+- **Institution Management**: University and research institution integration
 
 ## 🚀 Quick Start
 
@@ -60,30 +45,25 @@ expand_less
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/academiapress.git
+git clone https://github.com/your-username/your-repo-name.git
 cd academiapress
-2. Install Dependencies
-code
-Bash
-download
-content_copy
-expand_less
-IGNORE_WHEN_COPYING_START
-IGNORE_WHEN_COPYING_END
+```
+
+> **Important**: Remember to replace all placeholder values (e.g., `your_supabase_project_url`, `your_supabase_anon_key`, `your-username`, `your-repo-name`, etc.) with your actual project details.
+
+### 2. Install Dependencies
+
+```bash
 npm install
 # or
 yarn install
-3. Environment Setup
+```
 
-Create a .env.local file in the root directory and add your credentials.
+### 3. Environment Setup
 
-code
-Env
-download
-content_copy
-expand_less
-IGNORE_WHEN_COPYING_START
-IGNORE_WHEN_COPYING_END
+Create a `.env.local` file in the root directory:
+
+```env
 # Supabase Configuration
 NEXT_PUBLIC_SUPABASE_URL=your_supabase_project_url
 NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
@@ -94,46 +74,37 @@ NEXT_PUBLIC_APP_NAME=AcademiaPress
 
 # Optional: Analytics
 NEXT_PUBLIC_ANALYTICS_ID=your_analytics_id
-4. Database Setup
+```
 
-Create Supabase Project:
+### 4. Database Setup
 
-Visit Supabase and create a new project.
+1. **Create Supabase Project**:
+   - Visit [Supabase](https://supabase.com/) and create a new project
+   - Copy your project URL and anon key
 
-Copy your project URL and anon key into the .env.local file.
+2. **Run Database Migrations**:
+   ```sql
+   -- Copy and run the SQL scripts from /database/migrations/
+   -- in your Supabase SQL editor
+   ```
 
-Run Database Migrations:
+3. **Enable Authentication**:
+   - Go to Authentication > Settings in Supabase
+   - Configure your preferred auth providers
 
-Copy and run the SQL scripts from /database/migrations/ in your Supabase SQL editor to create the necessary tables.
+### 5. Run Development Server
 
-Enable Authentication:
-
-Go to Authentication > Settings in your Supabase project dashboard.
-
-Configure your preferred authentication providers (e.g., Email, Google, GitHub).
-
-5. Run Development Server
-code
-Bash
-download
-content_copy
-expand_less
-IGNORE_WHEN_COPYING_START
-IGNORE_WHEN_COPYING_END
+```bash
 npm run dev
 # or
 yarn dev
+```
 
-Open http://localhost:3000 to view the application.
+Open [http://localhost:3000](http://localhost:3000) in your browser to see the application.
 
-📁 Project Structure
-code
-Code
-download
-content_copy
-expand_less
-IGNORE_WHEN_COPYING_START
-IGNORE_WHEN_COPYING_END
+## 📋 Project Structure
+
+```
 academiapress/
 ├── src/
 │   ├── app/                          # Next.js 13+ App Router
@@ -180,14 +151,11 @@ academiapress/
 ├── tailwind.config.js              # Tailwind CSS configuration
 ├── tsconfig.json                   # TypeScript configuration
 └── next.config.js                  # Next.js configuration
-🛠️ Available Scripts
-code
-Bash
-download
-content_copy
-expand_less
-IGNORE_WHEN_COPYING_START
-IGNORE_WHEN_COPYING_END
+```
+
+## 🛠️ Available Scripts
+
+```bash
 # Development
 npm run dev          # Start development server
 npm run build        # Build for production
@@ -204,102 +172,78 @@ npm run db:reset     # Reset database (development only)
 npm run test         # Run tests
 npm run test:watch   # Run tests in watch mode
 npm run test:e2e     # Run end-to-end tests
-🎨 Design System
-Color Palette
+```
 
-Primary: #002147 (Navy Blue) - Main brand color
+## 🎨 Design System
 
-Secondary: #1e3a8a (Blue) - Secondary actions
+### Color Palette
+- **Primary**: `#002147` (Navy Blue) - Main brand color
+- **Secondary**: `#1e3a8a` (Blue) - Secondary actions
+- **Accent**: `#3b82f6` (Light Blue) - Highlights and links
+- **Success**: `#10b981` (Green) - Success states
+- **Warning**: `#f59e0b` (Yellow) - Warning states
+- **Error**: `#ef4444` (Red) - Error states
 
-Accent: #3b82f6 (Light Blue) - Highlights and links
+### Typography
+- **Font Family**: Inter, system-ui, sans-serif
+- **Weights**: 400 (normal), 500 (medium), 600 (semibold), 700 (bold), 800 (extrabold), 900 (black)
+- **Scale**: Following Tailwind's default type scale
 
-Success: #10b981 (Green) - Success states
-
-Warning: #f59e0b (Yellow) - Warning states
-
-Error: #ef4444 (Red) - Error states
-
-Typography
-
-Font Family: Inter, system-ui, sans-serif
-
-Weights: 400 (normal), 500 (medium), 600 (semibold), 700 (bold), 800 (extrabold), 900 (black)
-
-Scale: Following Tailwind's default type scale
-
-Glassmorphism Components
-
+### Glassmorphism Components
 All components feature glassmorphism design with:
+- `backdrop-blur-xl` for glass effect
+- Semi-transparent backgrounds (`bg-white/20`, `bg-slate-800/20`)
+- Subtle borders (`border-white/30`, `border-slate-700/40`)
+- Hover effects with scale and shadow transitions
 
-backdrop-blur-xl for the glass effect
+## 🌙 Dark Mode Implementation
 
-Semi-transparent backgrounds (bg-white/20, bg-slate-800/20)
+The application includes comprehensive dark mode support:
 
-Subtle borders (border-white/30, border-slate-700/40)
+### Features
+- **Automatic Detection**: Respects system theme preference
+- **Manual Toggle**: User can manually switch themes
+- **Persistent Storage**: Theme choice saved in localStorage
+- **Component Theming**: All components properly themed
+- **Chart Theming**: Analytics charts adapt to theme
 
-Hover effects with scale and shadow transitions
+### Theme Context
+Located in `src/contexts/ThemeContext.tsx`, providing:
+- Theme state management
+- System preference detection
+- Local storage persistence
+- Theme switching functions
 
-🌙 Dark Mode Implementation
+## 📊 Analytics Components
 
-The application includes comprehensive dark mode support.
+### Submission Dashboard (`SubmissionDashboard.tsx`)
+- **Real-time Data**: Live submission tracking
+- **Interactive Charts**: Pie charts for status distribution
+- **Trend Analysis**: Monthly submission trends
+- **Performance Metrics**: Success rates and timing
+- **Responsive Design**: Works on all screen sizes
 
-Features
+### Plagiarism Checker (`PlagiarismChecker.tsx`)
+- **AI-Powered Analysis**: Advanced content scanning
+- **Similarity Scoring**: Percentage-based similarity detection
+- **Source Identification**: Academic database cross-referencing
+- **Detailed Reports**: Comprehensive similarity analysis
+- **File Support**: PDF, DOC, DOCX, TXT file formats
 
-Automatic Detection: Respects system theme preference (prefers-color-scheme).
+### Advanced Analytics (`AdvancedAnalytics.tsx`)
+- **Revenue Analytics**: Financial performance tracking
+- **Author Performance**: Publication success metrics
+- **Platform Insights**: Usage statistics and trends
+- **Interactive Visualizations**: Multiple chart types
+- **Export Capabilities**: Data export functionality
 
-Manual Toggle: User can manually switch themes at any time.
+## 🔧 Configuration
 
-Persistent Storage: Theme choice is saved in localStorage.
+### Environment Variables
 
-Component Theming: All UI components are properly themed for both modes.
+Create `.env.local` with these required variables:
 
-Chart Theming: Analytics charts and visualizations adapt to the selected theme.
-
-The theme context is managed in src/contexts/ThemeContext.tsx, providing state management, system preference detection, and theme switching functions.
-
-📊 Analytics Components
-Submission Dashboard (SubmissionDashboard.tsx)
-
-Real-time Data: Live submission tracking and status updates.
-
-Interactive Charts: Pie charts for status distribution (e.g., Draft, Submitted, In Review).
-
-Trend Analysis: Line charts showing monthly submission trends.
-
-Performance Metrics: Key metrics like success rates and average review times.
-
-Plagiarism Checker (PlagiarismChecker.tsx)
-
-AI-Powered Analysis: Advanced content scanning using machine learning models.
-
-Similarity Scoring: Provides a percentage-based similarity score.
-
-Source Identification: Cross-references content against a vast academic database.
-
-File Support: Handles .pdf, .doc, .docx, and .txt file formats.
-
-Advanced Analytics (AdvancedAnalytics.tsx)
-
-Revenue Analytics: Tracks financial performance with customizable date ranges.
-
-Author Performance: Monitors publication success metrics by author and institution.
-
-Platform Insights: Provides usage statistics, user growth, and other platform trends.
-
-Export Capabilities: Allows users to export data and reports.
-
-🔧 Configuration
-Environment Variables
-
-Create a .env.local file with these variables:
-
-code
-Env
-download
-content_copy
-expand_less
-IGNORE_WHEN_COPYING_START
-IGNORE_WHEN_COPYING_END
+```env
 # Required - Supabase Configuration
 NEXT_PUBLIC_SUPABASE_URL=https://your-project.supabase.co
 NEXT_PUBLIC_SUPABASE_ANON_KEY=your-anon-key-here
@@ -312,182 +256,278 @@ NEXT_PUBLIC_APP_NAME=AcademiaPress
 NEXT_PUBLIC_ANALYTICS_ID=your-google-analytics-id
 NEXT_PUBLIC_ENABLE_ANALYTICS=true
 NEXT_PUBLIC_ENABLE_PLAGIARISM=true
-NEXT_PUBLIC_MAX_FILE_SIZE=5242880 # (in bytes, e.g., 5MB)
-Supabase Database Schema
+NEXT_PUBLIC_MAX_FILE_SIZE=5242880
+```
 
-Below are the core SQL tables. You can find the full migration scripts in /database/migrations/.
+### Supabase Setup
 
-code
-SQL
-download
-content_copy
-expand_less
-IGNORE_WHEN_COPYING_START
-IGNORE_WHEN_COPYING_END
--- User profiles linked to Supabase auth
-CREATE TABLE user_profiles (
-  id uuid references auth.users not null primary key,
-  email text,
-  first_name text,
-  last_name text,
-  institution text,
-  created_at timestamp with time zone default timezone('utc'::text, now())
-);
+1. **Database Tables**:
+   ```sql
+   -- User profiles
+   CREATE TABLE user_profiles (
+     id uuid references auth.users not null primary key,
+     email text,
+     first_name text,
+     last_name text,
+     institution text,
+     created_at timestamp with time zone default timezone('utc'::text, now())
+   );
 
--- Article submissions
-CREATE TABLE article_submissions (
-  id bigint generated by default as identity primary key,
-  title text not null,
-  abstract text,
-  content text,
-  status text default 'draft', -- e.g., draft, submitted, in_review, published, rejected
-  user_id uuid references user_profiles(id),
-  submitted_at timestamp with time zone default timezone('utc'::text, now())
-);
+   -- Article submissions
+   CREATE TABLE article_submissions (
+     id bigint generated by default as identity primary key,
+     title text not null,
+     abstract text,
+     content text,
+     status text default 'draft',
+     user_id uuid references user_profiles(id),
+     submitted_at timestamp with time zone default timezone('utc'::text, now())
+   );
 
--- Conferences
-CREATE TABLE conferences (
-  id bigint generated by default as identity primary key,
-  title text not null,
-  description text,
-  start_date timestamp with time zone,
-  end_date timestamp with time zone,
-  location text,
-  registration_fee numeric,
-  created_at timestamp with time zone default timezone('utc'::text, now())
-);
+   -- Conferences
+   CREATE TABLE conferences (
+     id bigint generated by default as identity primary key,
+     title text not null,
+     description text,
+     start_date timestamp with time zone,
+     end_date timestamp with time zone,
+     location text,
+     registration_fee numeric,
+     created_at timestamp with time zone default timezone('utc'::text, now())
+   );
+   ```
 
-Important: Remember to enable Row Level Security (RLS) on all tables and create appropriate policies for user access.
+2. **Row Level Security (RLS)**:
+   - Enable RLS on all tables
+   - Create appropriate policies for user access
 
-🚀 Deployment
-Vercel (Recommended)
+3. **Authentication**:
+   - Enable email/password authentication
+   - Configure OAuth providers if needed
+   - Set up email templates
 
-Push your code to a Git repository (e.g., GitHub).
+### Theme Customization
 
-Import your project into Vercel.
+Modify `src/contexts/ThemeContext.tsx` to customize themes:
 
-Add all environment variables from .env.local to the Vercel project settings.
+```javascript
+const themes = {
+  light: {
+    primary: '#002147',
+    secondary: '#1e3a8a',
+    background: '#ffffff',
+    // ... other theme variables
+  },
+  dark: {
+    primary: '#3b82f6',
+    secondary: '#60a5fa',
+    background: '#0f172a',
+    // ... other theme variables
+  }
+}
+```
 
-Update NEXT_PUBLIC_APP_URL to your production domain.
+## 🚀 Deployment
 
-Deploy!
+### Vercel (Recommended)
 
-Self-Hosted
+1. **Connect Repository**:
+   ```bash
+   npm install -g vercel
+   vercel login
+   vercel
+   ```
 
-Build Application:
+2. **Environment Variables**:
+   - Add all environment variables in Vercel dashboard
+   - Update `NEXT_PUBLIC_APP_URL` to your domain
 
-code
-Bash
-download
-content_copy
-expand_less
-IGNORE_WHEN_COPYING_START
-IGNORE_WHEN_COPYING_END
-npm run build
+3. **Custom Domain**:
+   - Add domain in Vercel project settings
+   - Update DNS records as instructed
 
-Start the Server:
+### Netlify Alternative
 
-code
-Bash
-download
-content_copy
-expand_less
-IGNORE_WHEN_COPYING_START
-IGNORE_WHEN_COPYING_END
-npm start
+1. **Build Settings**:
+   - Build command: `npm run build`
+   - Publish directory: `out`
 
-Process Manager:
-Use a process manager like PM2 for better stability and management.
+2. **Environment Variables**:
+   - Add variables in Netlify dashboard
+   - Ensure all `NEXT_PUBLIC_` variables are set
 
-code
-Bash
-download
-content_copy
-expand_less
-IGNORE_WHEN_COPYING_START
-IGNORE_WHEN_COPYING_END
-npm install -g pm2
-pm2 start npm --name "academiapress" -- start
+### Self-Hosted
 
-Reverse Proxy:
-Configure a reverse proxy like Nginx or Apache to handle requests and manage SSL.
+1. **Build Application**:
+   ```bash
+   npm run build
+   npm start
+   ```
 
-🔐 Security Features
+2. **Process Manager**:
+   ```bash
+   # Using PM2
+   npm install -g pm2
+   pm2 start npm -- start
+   ```
 
-Authentication: Secure JWT-based authentication via Supabase Auth.
+3. **Reverse Proxy**:
+   - Configure Nginx or Apache
+   - Set up SSL certificates
 
-Row Level Security: Database-level access control ensures users can only access their own data.
+## 🔐 Security Features
 
-Input Validation: Comprehensive form validation on both client and server sides.
+- **JWT Authentication**: Secure token-based authentication
+- **Role-Based Access Control**: Granular permissions system
+- **Data Encryption**: Sensitive data encryption at rest
+- **CSRF Protection**: Cross-site request forgery prevention
+- **Rate Limiting**: API request throttling to prevent abuse
 
-File Upload Security: Strict checks on file types and sizes.
+## 🧪 Testing
 
-CSRF Protection: Built-in protection from Next.js.
+### Unit Tests
+```bash
+npm run test
+npm run test:watch
+npm run test:coverage
+```
 
-Environment Variables: Secure management of keys and configuration.
+### Integration Tests
+```bash
+npm run test:integration
+```
 
-🤝 Contributing
+### E2E Tests
+```bash
+npm run test:e2e
+npm run test:e2e:headed
+```
 
-We welcome contributions! Please check out the CONTRIBUTING.md file for detailed guidelines.
+## 📱 Mobile Responsiveness
 
-Quick Guide
+- **Mobile-First Design**: Optimized for mobile devices
+- **Touch-Friendly**: Large touch targets and intuitive gestures
+- **Progressive Web App**: PWA capabilities for mobile installation
+- **Offline Support**: Basic offline functionality
+- **Performance**: Optimized for mobile networks
 
-Fork the repository.
+## 🔍 SEO & Performance
 
-Create a new feature branch: git checkout -b feature/amazing-feature.
+- **Next.js SEO**: Built-in SEO optimization
+- **Meta Tags**: Proper meta tags for social sharing
+- **Sitemap**: Auto-generated sitemap
+- **Performance**: Lighthouse score optimization
+- **Core Web Vitals**: Optimized for Google's metrics
 
-Make your changes and add tests.
+## 🤝 Contributing
 
-Commit your changes: git commit -m 'feat: Add amazing feature'.
+We welcome contributions! Please follow these guidelines:
 
-Push to the branch: git push origin feature/amazing-feature.
+### Getting Started
 
-Open a Pull Request.
+1. Fork the repository
+2. Create a feature branch: `git checkout -b feature/amazing-feature`
+3. Make your changes
+4. Add tests for new functionality
+5. Ensure all tests pass: `npm run test`
+6. Commit your changes: `git commit -m 'Add amazing feature'`
+7. Push to the branch: `git push origin feature/amazing-feature`
+8. Open a Pull Request
 
-🐛 Troubleshooting
-Common Issues
+### Code Style
+- Follow TypeScript best practices
+- Use ESLint and Prettier configurations
+- Write meaningful commit messages
+- Add JSDoc comments for functions
+- Include tests for new features
 
-"Module not found" errors:
-Delete node_modules and package-lock.json and reinstall with npm install.
+### Pull Request Process
+1. Ensure your PR description clearly describes the problem and solution
+2. Include screenshots for UI changes
+3. Update documentation if needed
+4. Request review from maintainers
 
-Database connection issues:
-Verify Supabase URL and key in .env.local and check your project's RLS policies.
+## 🐛 Troubleshooting
 
-Build failures:
-Run npm run type-check and npm run lint to catch errors before building.
+### Common Issues
 
-Getting Help
+**"Module not found" errors:**
+```bash
+# Delete node_modules and reinstall
+rm -rf node_modules package-lock.json  # Windows: rmdir /s node_modules & del package-lock.json
+npm install
+```
 
-📧 Email: support@academiapress.com
+**Database connection issues:**
+- Verify Supabase URL and key in `.env.local`
+- Check Supabase project status and RLS policies
+- Ensure database tables exist
 
-💬 Discord: Join our community
+**Build failures:**
+- Run type checking: `npm run type-check`
+- Check for ESLint errors: `npm run lint`
+- Verify all environment variables are set
 
-🐛 Issues: GitHub Issues
+**Performance issues:**
+- Enable Next.js analytics
+- Check bundle analyzer: `npm run analyze`
+- Optimize images and assets
 
-📈 Roadmap
+### Getting Help
 
-Mobile App: React Native application for iOS and Android.
+- 📧 **Email**: support@academiapress.com
+- 💬 **Discord**: [Join our community](https://discord.gg/academiapress)
+- 🐛 **Issues**: [GitHub Issues](https://github.com/YOUR_USERNAME/academiapress/issues)
+- 📖 **Documentation**: [Full Documentation](https://academiapress.com/docs)
 
-Advanced AI: GPT integration for research assistance and abstract generation.
+## 📄 License
 
-Collaboration Tools: Real-time collaborative editing for papers.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-Multi-language Support: Internationalization (i18n) for global reach.
+### MIT License Summary
+- ✅ Commercial use allowed
+- ✅ Modification allowed
+- ✅ Distribution allowed
+- ✅ Private use allowed
+- ❌ Liability and warranty not provided
 
-API Marketplace: Allow third-party integrations and plugins.
+## 🙏 Acknowledgments
 
-📄 License
+### Technologies Used
+- **[Next.js](https://nextjs.org/)** - React framework for production
+- **[React](https://reactjs.org/)** - Frontend JavaScript library
+- **[TypeScript](https://typescriptlang.org/)** - Type-safe JavaScript
+- **[Tailwind CSS](https://tailwindcss.com/)** - Utility-first CSS framework
+- **[Supabase](https://supabase.com/)** - Backend as a Service
+- **[Framer Motion](https://framer.com/motion/)** - Animation library
+- **[Heroicons](https://heroicons.com/)** - Beautiful SVG icons
+- **[Recharts](https://recharts.org/)** - React charting library
 
-This project is licensed under the MIT License. See the LICENSE file for details.
+### Special Thanks
+- Academic community for feedback and requirements
+- Open source contributors
+- Beta testers and early adopters
+- Design inspiration from leading academic platforms
 
-Built with ❤️ for the academic community.
+## 📈 Roadmap
 
-Empowering researchers, scholars, and institutions worldwide with modern publishing technology.
+### Upcoming Features
+- [ ] **Mobile App**: React Native mobile application
+- [ ] **Advanced AI**: GPT integration for research assistance
+- [ ] **Collaboration Tools**: Real-time collaborative editing
+- [ ] **Video Conferencing**: Built-in conference calling
+- [ ] **Blockchain Integration**: Publication verification
+- [ ] **Multi-language Support**: Internationalization
+- [ ] **API Marketplace**: Third-party integrations
 
-code
-Code
-download
-content_copy
-expand_less
-IGNORE_WHEN_COPYING_START
-IGNORE_WHEN_COPYING_END
+### Version History
+- **v1.0.0** - Initial release with core features
+- **v1.1.0** - Dark mode and mobile improvements
+- **v1.2.0** - Advanced analytics dashboard
+- **v2.0.0** - AI-powered features and glassmorphism UI
+
+---
+
+**Built with ❤️ for the academic community**
+
+*Empowering researchers, scholars, and institutions worldwide with modern publishing technology.*
