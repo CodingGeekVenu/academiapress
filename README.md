@@ -43,7 +43,7 @@
 ### 1. Clone the Repository
 
 ```bash
-git clone [https://github.com/your-username/your-repo-name.git](https://github.com/CodingGeekVenu/academiapress.git)
+git clone https://github.com/CodingGeekVenu/academiapress.git
 cd academiapress
 ```
 
