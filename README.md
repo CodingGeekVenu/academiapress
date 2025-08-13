@@ -2,6 +2,8 @@
 
 > A modern, AI-powered academic publishing platform with glassmorphism design, dark mode support, and comprehensive analytics.
 
+> **Note**: Consider adding a relevant project image here to enhance the README's visual appeal on GitHub.
+
 ## ✨ Features
 
 ### 🎨 **Modern UI/UX**
@@ -43,9 +45,11 @@
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/CodingGeekVenu/academiapress.git
+git clone https://github.com/your-username/your-repo-name.git
 cd academiapress
 ```
+
+> **Important**: Remember to replace all placeholder values (e.g., `your_supabase_project_url`, `your_supabase_anon_key`, `your-username`, `your-repo-name`, etc.) with your actual project details.
 
 ### 2. Install Dependencies
 

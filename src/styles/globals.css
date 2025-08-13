@@ -1,0 +1,174 @@
+/* src/styles/globals.css - DARK MODE ENHANCED */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* ✅ DARK MODE BASE STYLES */
+.dark {
+  color-scheme: dark;
+}
+
+.dark body {
+  background-color: #0f172a;
+  color: #f1f5f9;
+}
+
+/* ✅ DARK MODE COMPONENT STYLES */
+@layer utilities {
+  .bg-surface {
+    @apply bg-white dark:bg-slate-800;
+  }
+  
+  .bg-surface-secondary {
+    @apply bg-gray-50 dark:bg-slate-700;
+  }
+  
+  .text-primary {
+    @apply text-gray-900 dark:text-slate-100;
+  }
+  
+  .text-secondary {
+    @apply text-gray-600 dark:text-slate-300;
+  }
+  
+  .text-muted {
+    @apply text-gray-500 dark:text-slate-400;
+  }
+  
+  .border-default {
+    @apply border-gray-200 dark:border-slate-600;
+  }
+  
+  .hover-surface {
+    @apply hover:bg-gray-50 dark:hover:bg-slate-700;
+  }
+}
+
+/* ✅ ACADEMIC OXFORD STYLING WITH DARK MODE */
+.oxford-gradient {
+  background: linear-gradient(135deg, #002147 0%, #1e3a8a 100%);
+}
+
+.dark .oxford-gradient {
+  background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+}
+
+.oxford-shadow {
+  box-shadow: 0 4px 6px -1px rgba(0, 33, 71, 0.1), 0 2px 4px -1px rgba(0, 33, 71, 0.06);
+}
+
+.dark .oxford-shadow {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+}
+
+/* ✅ CHART DARK MODE STYLES */
+.dark .recharts-wrapper {
+  color: #f1f5f9;
+}
+
+.dark .recharts-cartesian-axis-tick {
+  fill: #94a3b8;
+}
+
+.dark .recharts-text {
+  fill: #f1f5f9;
+}
+
+/* ✅ MOBILE RESPONSIVE (BOTH THEMES) */
+@media (max-width: 768px) {
+  .mobile-button {
+    font-size: 0.875rem !important;
+    padding: 0.75rem 1rem !important;
+    min-height: 44px !important;
+  }
+  
+  .mobile-card {
+    margin: 0.5rem !important;
+    padding: 1rem !important;
+  }
+}
+
+/* src/styles/globals.css - EMERGENCY FIXES */
+
+/* ✅ Ensure content is always visible */
+.hero-content {
+  position: relative !important;
+  z-index: 100 !important;
+  background: rgba(255, 255, 255, 0.05) !important;
+  backdrop-filter: none !important;
+}
+
+/* ✅ Fix backdrop blur conflicts */
+.glass-card {
+  position: relative !important;
+  background: rgba(255, 255, 255, 0.9) !important;
+  backdrop-filter: blur(8px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+}
+
+/* ✅ Override any hidden content */
+.main-content * {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* ✅ Fix z-index issues */
+.background-particles {
+  z-index: 1 !important;
+}
+
+.main-content {
+  z-index: 10 !important;
+  position: relative !important;
+}
+
+/* ✅ FOCUS STATES FOR BOTH THEMES */
+button:focus,
+input:focus,
+textarea:focus,
+select:focus,
+a:focus {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+.dark button:focus,
+.dark input:focus,
+.dark textarea:focus,
+.dark select:focus,
+.dark a:focus {
+  outline-color: #60a5fa;
+}
+
+/* ✅ LOADING SPINNER ANIMATION */
+.loading-spinner {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* ✅ SMOOTH THEME TRANSITIONS */
+* {
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
