@@ -49,8 +49,6 @@ git clone (https://github.com/CodingGeekVenu/academiapress.git)
 cd academiapress
 ```
 
-> **Important**: Remember to replace all placeholder values (e.g., `your_supabase_project_url`, `your_supabase_anon_key`, `your-username`, `your-repo-name`, etc.) with your actual project details.
-
 ### 2. Install Dependencies
 
 ```bash
